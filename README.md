@@ -10,27 +10,86 @@ We are all about decentralization and one thing we distrust most is the current 
 
 Also there were issues with the rebasing protocol. Because its always at a fixed time and date, there was huge volatility right before and after each rebase caused by bots, algorithms and traders. we do this by using a randomized rebase event, that triggers an average of 365 times a year but at at random times.
 
+## Table of Contents
+
+- [Getting Started](#Getting Started)
+- [Mainnet addresses](#Mainnet addresses)
+- [Contracts](#Contracts)
+- [Contact](#Contact)
+- [License](#license)
+
 ## Getting Started
 
 This repository contains the token contract including their dependencies used on the Ethereum blockchain.
+
+## Mainnet addresses
+
+The official mainnet addresses of $AMPLG are:
+
+- ERC-20 Token: <a href="https://etherscan.io/token/0x8003c49f6ebacddc493ea47cab45e892d1b638a1">0x8003c49f6ebacddc493ea47cab45e892d1b638a1</a>
+- Gold Orchestrator Policy: <a href="https://etherscan.io/address/0x34af6c2e8bd1c58f066b401e9df249c1af128d75">0x34af6c2e8bd1c58f066b401e9df249c1af128d75</a>
+- Gold Oracle: <a href="https://etherscan.io/address/0xd015aa88d4d8f75058a3b9bf26290afe872f2642">0xd015aa88d4d8f75058a3b9bf26290afe872f2642</a>
 
 ## Contracts
 
 ### AdminProxy.sol
 
-- 
-
-### AMPLG.sol
-
--
+- By design, smart contracts are immutable. On the other hand, software quality heavily depends on the ability to upgrade and patch source code in order to produce iterative releases. Even though blockchain based software profits significantly from the technology’s immutability, still a certain degree of mutability is needed for bug fixing and potential product improvements. OpenZeppelin Upgrades solves this apparent contradiction by providing an easy to use, simple, robust, and opt-in upgrade mechanism for smart contracts that can be controlled by any type of governance, be it a multi-sig wallet, a simple address or a complex DAO.
+- https://docs.openzeppelin.com/upgrades/2.7/proxies
 
 ### AMPLG_GoldPolicy.sol
 
--
+-   Parent contract for controlling the smart contract via the gold orchestrator policy.
+-   Creates connection to fetch the gold prices and market prices through the Gold Oracle. 
+-   Rebasing is pegged to Paxos Gold price. 
+-   A randomized lag factor (6-14) is applied based on the current supply, with a
+    function to accelerate increase in supply.
+
+Development:
+
+- Integrate Uniswap libraries to connect with Uniswap V2. 
+
+### AMPLG.sol
+
+-   Basic ERC20 Detailed Token with a rebase function, callable by the Gold Orchestrator Policy
+-   Contract is Ownable. Owner can be transferred to allow upgrades to finalize the on-chain random rebasing. 
+-   Once the code in the contracts is finalized, contract owner will be locked to ensure no party has control and the implementation is completely self governed.
+
 ### AMPLG_GoldOracle.sol
 
--
+- Controls through provider reports the current gold price and market price. 
 
+## Contact
 
+### Official Links:
 
+- Website: https://amplegold.io
 
+- Telegram: https://t.me/amplegold
+
+- Announcement channel: @amplegoldannouncements
+
+- Github: https://github.com/amplegold
+
+- Twitter: https://twitter.com/amplegold_io
+ 
+- Youtube: https://youtu.be/MnksEkAW1qA
+
+### Contribute
+
+To report bugs within this package, create an issue in this repository.
+For security issues, please contact amplegold@protonmail.com
+When submitting code ensure that it is free of lint errors and has 100% test coverage.
+
+``` bash
+# Lint code
+npm run lint
+
+# View code coverage
+npm run coverage
+```
+
+## License
+
+[GNU General Public License v3.0 (c) 2020 AmpleGold.io](./LICENSE)
+ 
