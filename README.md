@@ -82,9 +82,9 @@ if the exchange rate between AMPLG’s and its target is < Pt − δ, the protoc
 <img src="https://amplegold.io/wp-content/uploads/2020/08/amplgprotocol.jpg">
 Above the threshold (Pt + δ) the protocol expands.<br />
 Below the threshold (Pt – δ) the protocol contracts.<br />
-<br /><br />
+<br />
 Also, a randomized, curved lag factor has been added. This allows the supply to increase faster at a low marketcap. If the supply is high, the lag factor has a bigger chance to be high as well.
-
+<br />
 Minimum Lag factor = 6<br />
 Maximum lag factor = 14
 
