@@ -413,7 +413,7 @@ contract AMPLGToken is Ownable, ERC20Detailed {
      * @param supplyDelta The number of new fragment tokens to add into circulation via expansion.
      * @return The total number of fragments after the supply adjustment.
      */
-    function rebaseGold(uint256 epoch, int256 supplyDelta)
+    function rebase(uint256 epoch, int256 supplyDelta)
         external
         onlyGoldPolicy
         returns (uint256)

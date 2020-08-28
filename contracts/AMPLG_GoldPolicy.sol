@@ -216,7 +216,7 @@ interface IERC20 {
 
 interface IAMPLG {
     function totalSupply() external view returns (uint256);
-    function rebaseGold(uint256 epoch, int256 supplyDelta) external returns (uint256);
+    function rebase(uint256 epoch, int256 supplyDelta) external returns (uint256);
 }
 
 interface IGoldOracle {
@@ -389,7 +389,7 @@ contract AMPLGGoldPolicy is Ownable {
         
         (uint256 curGoldPrice, uint256 marketPrice, int256 targetRate, int256 supplyDelta) = getRebaseValues();
 
-        uint256 supplyAfterRebase = amplg.rebaseGold(epoch, supplyDelta);
+        uint256 supplyAfterRebase = amplg.rebase(epoch, supplyDelta);
         assert(supplyAfterRebase <= MAX_SUPPLY);
         
         emit LogRebase(epoch, marketPrice, curGoldPrice, supplyDelta, now);
