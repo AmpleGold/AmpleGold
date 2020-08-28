@@ -12,17 +12,19 @@ Also there were issues with the rebasing protocol. Because its always at a fixed
 
 ## Table of Contents
 
-- [Getting Started](#Getting Started)
-- [Mainnet addresses](#Mainnet addresses)
+- [Getting Started](#Getting-Started)
+- [Mainnet addresses](#Mainnet-addresses)
 - [Contracts](#Contracts)
+- [Technology](#Technology)
+- [Install](#install)
 - [Contact](#Contact)
 - [License](#license)
 
-## Getting Started
+## Getting-Started
 
 This repository contains the token contract including their dependencies used on the Ethereum blockchain.
 
-## Mainnet addresses
+## Mainnet-addresses
 
 The official mainnet addresses of $AMPLG are:
 
@@ -45,7 +47,7 @@ The official mainnet addresses of $AMPLG are:
 -   A randomized lag factor (6-14) is applied based on the current supply, with a
     function to accelerate increase in supply.
 
-Development:
+Currently under development:
 
 - Integrate Uniswap libraries to connect with Uniswap V2. 
 
@@ -58,6 +60,33 @@ Development:
 ### AMPLG_GoldOracle.sol
 
 - Controls through provider reports the current gold price and market price. 
+
+## Technology
+
+### How do rebase events work?
+
+AMPLG’s Elastic token supply defi-protocol has been inspired by AmpleForth’s token model, with some extra features like a randomized rebasing timing and model. AMPLG reaches a supply-price equilibrium with its random rebasing. This means the volatility is in the token supply instead of the token price.
+
+When you Hold AMPLG, you own a percentage of the total supply. Your holdings rise in value when the marketcap rises.
+
+When the price of AMPLG is above the target price. The contract will activate a rebase event to increase AMPLG in circulation and vice versa.
+
+The target price for 1 AMPLG = 0.01g of Gold = $0.63596
+
+To achieve price-supply equilibrium, the protocol expands and contracts supply in one of two ways. Given a price target, Pt and price threshold, δ:
+
+if the exchange rate between AMPLG’s and its target is > Pt + δ, the protocol responds by expanding to coin holders proportionally.
+
+if the exchange rate between AMPLG’s and its target is < Pt − δ, the protocol responds by contracting from coin holders proportionally.
+
+<img src="https://amplegold.io/wp-content/uploads/2020/08/amplgprotocol.jpg">
+Above the threshold (Pt + δ) the protocol expands.
+Below the threshold (Pt – δ) the protocol contracts.
+
+Also, a randomized, curved lag factor has been added. This allows the supply to increase faster at a low marketcap. If the supply is high, the lag factor has a bigger chance to be high as well.
+
+Minimum Lag factor = 6
+Maximum lag factor = 14
 
 ## Contact
 
@@ -74,6 +103,16 @@ Development:
 - Twitter: https://twitter.com/amplegold_io
  
 - Youtube: https://youtu.be/MnksEkAW1qA
+
+## Install
+
+```bash
+# Install project dependencies
+npm install
+
+# Install ethereum local blockchain(s) and associated dependencies
+npx setup-local-chains
+```
 
 ### Contribute
 
