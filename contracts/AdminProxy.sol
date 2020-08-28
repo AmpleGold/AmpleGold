@@ -1,3 +1,25 @@
+// SPDX-License-Identifier: MIT
+
+/* 
+
+    _    __  __ ____  _     _____ ____       _     _       _       
+   / \  |  \/  |  _ \| |   | ____/ ___| ___ | | __| |     (_) ___  
+  / _ \ | |\/| | |_) | |   |  _|| |  _ / _ \| |/ _` |     | |/ _ \ 
+ / ___ \| |  | |  __/| |___| |__| |_| | (_) | | (_| |  _  | | (_) |
+/_/   \_\_|  |_|_|   |_____|_____\____|\___/|_|\__,_| (_) |_|\___/ 
+                                
+
+    Ample Gold $AMPLG is a goldpegged defi protocol that is based on Ampleforths elastic tokensupply model. 
+    AMPLG is designed to maintain its base price target of 0.01g of Gold with a progammed inflation adjustment (rebase).
+    
+    Forked from Ampleforth: https://github.com/ampleforth/uFragments (Credits to Ampleforth team for implementation of rebasing on the ethereum network)
+    
+    GPL 3.0 license
+    
+    AdminProxy.sol - Admin Proxy for contract interface
+  
+*/
+
 // File: zos-lib/contracts/upgradeability/Proxy.sol
 
 pragma solidity ^0.5.0;

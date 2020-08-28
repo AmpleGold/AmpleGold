@@ -2,11 +2,11 @@
 
 /* 
 
-    _    __  __ ____  _     ____       _     _       _       
-   / \  |  \/  |  _ \| |   / ___| ___ | | __| |     (_) ___  
-  / _ \ | |\/| | |_) | |  | |  _ / _ \| |/ _` |     | |/ _ \ 
- / ___ \| |  | |  __/| |__| |_| | (_) | | (_| |  _  | | (_) |
-/_/   \_\_|  |_|_|   |_____\____|\___/|_|\__,_| (_) |_|\___/ 
+    _    __  __ ____  _     _____ ____       _     _       _       
+   / \  |  \/  |  _ \| |   | ____/ ___| ___ | | __| |     (_) ___  
+  / _ \ | |\/| | |_) | |   |  _|| |  _ / _ \| |/ _` |     | |/ _ \ 
+ / ___ \| |  | |  __/| |___| |__| |_| | (_) | | (_| |  _  | | (_) |
+/_/   \_\_|  |_|_|   |_____|_____\____|\___/|_|\__,_| (_) |_|\___/ 
                                 
 
     Ample Gold $AMPLG is a goldpegged defi protocol that is based on Ampleforths elastic tokensupply model. 
@@ -18,9 +18,6 @@
     
     AMPLG_GoldOracle.sol - AMPLG Market Oracle
   
-*/
-/**
- *Submitted for verification at Etherscan.io on 2019-06-14
 */
 
 // File: openzeppelin-solidity/contracts/math/SafeMath.sol

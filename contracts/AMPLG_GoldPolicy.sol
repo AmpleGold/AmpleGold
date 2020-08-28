@@ -2,11 +2,11 @@
 
 /* 
 
-    _    __  __ ____  _     ____       _     _       _       
-   / \  |  \/  |  _ \| |   / ___| ___ | | __| |     (_) ___  
-  / _ \ | |\/| | |_) | |  | |  _ / _ \| |/ _` |     | |/ _ \ 
- / ___ \| |  | |  __/| |__| |_| | (_) | | (_| |  _  | | (_) |
-/_/   \_\_|  |_|_|   |_____\____|\___/|_|\__,_| (_) |_|\___/ 
+    _    __  __ ____  _     _____ ____       _     _       _       
+   / \  |  \/  |  _ \| |   | ____/ ___| ___ | | __| |     (_) ___  
+  / _ \ | |\/| | |_) | |   |  _|| |  _ / _ \| |/ _` |     | |/ _ \ 
+ / ___ \| |  | |  __/| |___| |__| |_| | (_) | | (_| |  _  | | (_) |
+/_/   \_\_|  |_|_|   |_____|_____\____|\___/|_|\__,_| (_) |_|\___/ 
                                 
 
     Ample Gold $AMPLG is a goldpegged defi protocol that is based on Ampleforths elastic tokensupply model. 
@@ -216,11 +216,7 @@ interface IERC20 {
 
 interface IAMPLG {
     function totalSupply() external view returns (uint256);
-    function rebase(uint256 epoch, int256 supplyDelta) external returns (uint256);
-}
-
-interface IOracle {
-    function getData() external view returns (uint256, bool);
+    function rebaseGold(uint256 epoch, int256 supplyDelta) external returns (uint256);
 }
 
 interface IGoldOracle {

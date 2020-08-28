@@ -2,11 +2,11 @@
 
 /* 
 
-    _    __  __ ____  _     ____       _     _       _       
-   / \  |  \/  |  _ \| |   / ___| ___ | | __| |     (_) ___  
-  / _ \ | |\/| | |_) | |  | |  _ / _ \| |/ _` |     | |/ _ \ 
- / ___ \| |  | |  __/| |__| |_| | (_) | | (_| |  _  | | (_) |
-/_/   \_\_|  |_|_|   |_____\____|\___/|_|\__,_| (_) |_|\___/ 
+    _    __  __ ____  _     _____ ____       _     _       _       
+   / \  |  \/  |  _ \| |   | ____/ ___| ___ | | __| |     (_) ___  
+  / _ \ | |\/| | |_) | |   |  _|| |  _ / _ \| |/ _` |     | |/ _ \ 
+ / ___ \| |  | |  __/| |___| |__| |_| | (_) | | (_| |  _  | | (_) |
+/_/   \_\_|  |_|_|   |_____|_____\____|\___/|_|\__,_| (_) |_|\___/ 
                                 
 
     Ample Gold $AMPLG is a goldpegged defi protocol that is based on Ampleforths elastic tokensupply model. 
@@ -354,7 +354,7 @@ contract AMPLGToken is Ownable, ERC20Detailed {
 
     uint256 private constant DECIMALS = 9;
     uint256 private constant MAX_UINT256 = ~uint256(0);
-    uint256 private constant INITIAL_FRAGMENTS_SUPPLY = 25 * 10**5 * 10**DECIMALS;
+    uint256 private constant INITIAL_FRAGMENTS_SUPPLY = 30 * 10**5 * 10**DECIMALS;
 
     // TOTAL_GONS is a multiple of INITIAL_FRAGMENTS_SUPPLY so that _gonsPerFragment is an integer.
     // Use the highest value that fits in a uint256 for max granularity.
@@ -407,13 +407,13 @@ contract AMPLGToken is Ownable, ERC20Detailed {
         tokenPaused = paused;
         emit LogTokenPaused(paused);
     }
-    
+     
      /**
      * @dev Notifies Fragments contract about a new rebase cycle.
      * @param supplyDelta The number of new fragment tokens to add into circulation via expansion.
      * @return The total number of fragments after the supply adjustment.
      */
-    function rebase(uint256 epoch, int256 supplyDelta)
+    function rebaseGold(uint256 epoch, int256 supplyDelta)
         external
         onlyGoldPolicy
         returns (uint256)
@@ -442,7 +442,7 @@ contract AMPLGToken is Ownable, ERC20Detailed {
   constructor(address _goldPolicy) public {
   
     Ownable.initialize(msg.sender);
-    ERC20Detailed.initialize("Ampleforth Gold", "AMPLG", uint8(DECIMALS));
+    ERC20Detailed.initialize("Ample Gold", "AMPLG", uint8(DECIMALS));
 
         rebasePaused = false;
         tokenPaused = false;
