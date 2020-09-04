@@ -452,7 +452,7 @@ contract AMPLGGoldPolicy is Ownable {
         int256 marketPrice = marketPrice.toInt256Safe();
         
         int256 delta = marketPrice.sub(goldPrice);
-        int256 lagSpawn = marketPrice.mul(rebaseLag.toInt256Safe());
+        int256 lagSpawn = goldPrice.mul(rebaseLag.toInt256Safe());
         
         return amplg.totalSupply().toInt256Safe()
             .mul(delta).div(lagSpawn);
