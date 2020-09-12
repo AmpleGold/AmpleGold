@@ -100,11 +100,11 @@ Maximum lag factor = 14
 
 - Website: https://amplegold.io
 
-- Telegram: https://t.me/amplegold
+- Telegram: https://t.me/amplegold (@amplegold)
 
-- Announcement channel: https://t.me/amplegoldannouncements
+- Announcement channel: https://t.me/amplegoldannouncements (@amplegoldannouncements)
 
-- Rebase alerts: https://t.me/amplgrebases
+- Rebase alerts: https://t.me/amplgrebases (@amplgrebases)
 
 - Github: https://github.com/amplegold
 
