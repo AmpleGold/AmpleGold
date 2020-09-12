@@ -120,6 +120,12 @@ Maximum lag factor = 14
 
 - UniCrypt POL: https://unicrypt.network/uniswap-browser/pair/0x15a6Ff0e22404Fa28BF1A5dc0688c8b655E798B8
 
+### E-mail
+
+Contact us via e-mail:
+
+<a href="mailto:amplegold@protonmail.com">amplegold@protonmail.com</a>
+
 ## Install
 
 ```bash
