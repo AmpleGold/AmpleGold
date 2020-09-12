@@ -31,6 +31,7 @@ The official mainnet addresses of $AMPLG are:
 - ERC-20 Token: <a href="https://etherscan.io/token/0x8003c49f6ebacddc493ea47cab45e892d1b638a1">0x8003c49f6ebacddc493ea47cab45e892d1b638a1</a>
 - Gold Orchestrator Policy: <a href="https://etherscan.io/address/0x34af6c2e8bd1c58f066b401e9df249c1af128d75">0x34af6c2e8bd1c58f066b401e9df249c1af128d75</a>
 - Gold Oracle: <a href="https://etherscan.io/address/0xd015aa88d4d8f75058a3b9bf26290afe872f2642">0xd015aa88d4d8f75058a3b9bf26290afe872f2642</a>
+- AMPLG Team Reserve: <a href="https://etherscan.io/address/0x449a26acb90daedb517fded247089f30134ceb09">0x449a26AcB90daeDB517Fded247089f30134cEB09</a>
 
 ## Contracts
 
@@ -61,6 +62,10 @@ Currently under development:
 
 - Controls through provider reports the current gold price and market price. 
 
+### AMPLG_TeamReserve.sol
+
+- Smart contract for locking the team tokens of AmpleGold.io
+
 ## Technology
 
 ### How do rebase events work?
@@ -79,7 +84,8 @@ if the exchange rate between AMPLG’s and its target is > Pt + δ, the protocol
 
 if the exchange rate between AMPLG’s and its target is < Pt − δ, the protocol responds by contracting from coin holders proportionally.
 
-<img src="https://amplegold.io/wp-content/uploads/2020/08/amplgprotocol.jpg">
+<img src="https://uploads-ssl.webflow.com/5f54b7a65b8274717b693de2/5f58f5f179f4d34481a80e92_amplgprotocol-768x608.jpg">
+
 Above the threshold (Pt + δ) the protocol expands.<br />
 Below the threshold (Pt – δ) the protocol contracts.
 <br /><br />
@@ -98,14 +104,21 @@ Maximum lag factor = 14
 
 - Announcement channel: @amplegoldannouncements
 
+- Rebase alerts: https://t.me/amplgrebases
+
 - Github: https://github.com/amplegold
 
-- Twitter: https://twitter.com/amplegold_io
- 
+- Twitter: https://twitter.com/amplegold
+
+- Medium: https://medium.com/@amplegold
+
 - Youtube: https://youtu.be/MnksEkAW1qA
 
-- Lightpaper: <a href="https://amplegold.io/lightpaper_amplegold_V1_02.pdf">AmpleGold</a>
+- Lightpaper: <a href="https://uploads-ssl.webflow.com/5f54b7a65b8274717b693de2/5f55c5cd418da6699b04723e_lightpaper_amplegold_V1_02.pdf">AmpleGold</a>
 
+- UniSwap V2: https://uniswap.info/pair/0x15a6ff0e22404fa28bf1a5dc0688c8b655e798b8
+
+- UniCrypt POL: https://unicrypt.network/uniswap-browser/pair/0x15a6Ff0e22404Fa28BF1A5dc0688c8b655E798B8
 
 ## Install
 
