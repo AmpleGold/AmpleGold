@@ -102,7 +102,7 @@ Maximum lag factor = 14
 
 - Telegram: https://t.me/amplegold
 
-- Announcement channel: @amplegoldannouncements
+- Announcement channel: https://t.me/amplegoldannouncements
 
 - Rebase alerts: https://t.me/amplgrebases
 
