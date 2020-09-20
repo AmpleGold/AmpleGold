@@ -1,3 +1,23 @@
+// SPDX-License-Identifier: MIT
+
+/* 
+
+    _    __  __ ____  _     _____ ____       _     _       _       
+   / \  |  \/  |  _ \| |   | ____/ ___| ___ | | __| |     (_) ___  
+  / _ \ | |\/| | |_) | |   |  _|| |  _ / _ \| |/ _` |     | |/ _ \ 
+ / ___ \| |  | |  __/| |___| |__| |_| | (_) | | (_| |  _  | | (_) |
+/_/   \_\_|  |_|_|   |_____|_____\____|\___/|_|\__,_| (_) |_|\___/ 
+                                
+
+    Ample Gold $AMPLG is a goldpegged defi protocol that is based on Ampleforths elastic tokensupply model. 
+    AMPLG is designed to maintain its base price target of 0.01g of Gold with a progammed inflation adjustment (rebase).
+    
+    GPL 3.0 license
+    
+    AMPLG_TeamReserve.sol - AMPLG Team Reserve - Vesting (locked Team funds) Smart Contract
+  
+*/
+
 pragma solidity ^0.4.18;
 
 contract ERC20 {
@@ -75,7 +95,9 @@ contract AMPLGTeamReserve {
         return (owner, unlockDate, token.balanceOf(this));
     }
     
+    // Parameter value can only ever be incremented - never decreased
     function updateUnlockDate(uint256 _newDate) onlyOwner public {
+        require(_newDate > unlockDate, "Date specified is less than current unlock date");
         unlockDate = _newDate;
     }
 
