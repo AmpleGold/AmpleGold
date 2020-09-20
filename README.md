@@ -86,11 +86,11 @@ Currently under development:
 
 AMPLG’s Elastic token supply defi-protocol has been inspired by AmpleForth’s token model, with some extra features like a randomized rebasing timing and model. AMPLG reaches a supply-price equilibrium with its random rebasing. This means the volatility is in the token supply instead of the token price.
 
-When you Hold AMPLG, you own a percentage of the total supply. Your holdings rise in value when the marketcap rises.
+When you Hold $AMPLG, you own a percentage of the total supply. Your holdings rise in value when the marketcap rises.
 
-When the price of AMPLG is above the target price. The contract will activate a rebase event to increase AMPLG in circulation and vice versa.
+When the price of $AMPLG is above the target price. The contract will activate a rebase event to increase $AMPLG in circulation and vice versa.
 
-The target price for 1 AMPLG = 0.01g of Gold = $0.63596
+The target price for 1 $AMPLG = 0.01g of Gold = $0.63596
 
 To achieve price-supply equilibrium, the protocol expands and contracts supply in one of two ways. Given a price target, Pt and price threshold, δ:
 
@@ -106,7 +106,7 @@ Below the threshold (Pt – δ) the protocol contracts.
 Also, a randomized, curved lag factor has been added. This allows the supply to increase faster at a low marketcap. If the supply is high, the lag factor has a bigger chance to be high as well.
 <br /><br />
 Minimum Lag factor = 6<br />
-Maximum lag factor = 14
+Maximum Lag factor = 14
 
 ## Contact
 
