@@ -33,6 +33,9 @@ The official mainnet addresses of $AMPLG are:
 - Gold Oracle: <a href="https://etherscan.io/address/0xd015aa88d4d8f75058a3b9bf26290afe872f2642">0xd015aa88d4d8f75058a3b9bf26290afe872f2642</a>
 - AMPLG Team Reserve: <a href="https://etherscan.io/address/0x449a26acb90daedb517fded247089f30134ceb09">0x449a26AcB90daeDB517Fded247089f30134cEB09</a>
 
+- AMPLG Sunshine Reserve (Staking smart contract): 
+<a href="https://etherscan.io/address/0x5810818F7E3583D97b930bC6EA66637b926d0676">0x5810818F7E3583D97b930bC6EA66637b926d0676</a>
+
 ## Contracts
 
 ### AdminProxy.sol
