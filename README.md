@@ -1,4 +1,4 @@
-<a href="http://www.amplegold.io/"><img src="https://avatars1.githubusercontent.com/u/69891050?s=460&u=e6aafe70ba1efe2ebdaf7e04e114615433f77d31&v=4" title="AmpleGold" alt="AmpleGold"></a>
+<center><a href="http://www.amplegold.io/"><img src="https://avatars1.githubusercontent.com/u/69891050?s=460&u=e6aafe70ba1efe2ebdaf7e04e114615433f77d31&v=4" title="AmpleGold" alt="AmpleGold"></a></center>
 
 # AmpleGold - $AMPLG
 
