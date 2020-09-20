@@ -2,13 +2,13 @@
 
 # AmpleGold - $AMPLG
 
-AmpleGold (code name AMPLG) is a goldpegged defi protocol that is based on Ampleforths elastic tokensupply model. AMPLG is designed to maintain its base price target of 0.01g of Gold with a progammed inflation adjustment (rebase).
+AmpleGold (code name $AMPLG) is a goldpegged defi protocol that is based on Ampleforths elastic tokensupply model. AMPLG is designed to maintain its base price target of 0.01g of Gold with a progammed inflation adjustment (rebase).
 
-Where Ampleforth rose to a 300m mcap in merely weeks, there were a couple of flaws in their model. We have remodeled and reprogrammed these flaws into a new version of the ample defi protocol.
+Where Ampleforth rose to a 300 million marketcap in merely weeks, there were a couple of flaws in their model. We have remodeled and reprogrammed these flaws into a new version of the AmpleGold defi protocol.
 
-We are all about decentralization and one thing we distrust most is the current economic fiat system. When the current financial system collapses and the dollar crashes, we strive to remain truly stable by pegging our token to the goldprice. Where 1 AMPLG = 0.01gram of Gold.
+We are all about decentralization and one thing we distrust most is the current economic fiat system. When the current financial system collapses and the dollar crashes, we strive to remain truly stable by pegging our token to the goldprice. Where 1 $AMPLG = 0.01 gram of Gold.
 
-Also there were issues with the rebasing protocol. Because its always at a fixed time and date, there was huge volatility right before and after each rebase caused by bots, algorithms and traders. we do this by using a randomized rebase event, that triggers an average of 365 times a year but at at random times.
+Also there were issues with the rebasing protocol. Because it is always at a fixed time and date, there was huge volatility right before and after each rebase caused by bots, algorithms and traders. We do this by using a randomized rebase event, that triggers an average of 365 times a year but at at random times.
 
 ## Table of Contents
 
