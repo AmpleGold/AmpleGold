@@ -16,7 +16,7 @@
     
     GPL 3.0 license
     
-    AMPLG_SunshineReserve.sol - AMPLG Sunshine Reserve - Staking Smart Contract
+    AMPLG_SunshineReserve.sol - AMPLG Sunshine Reserve - Liquidity Staking Smart Contract
   
 */
 
