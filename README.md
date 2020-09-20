@@ -62,6 +62,18 @@ Currently under development:
 
 - Controls through provider reports the current gold price and market price. 
 
+
+### AMPLG_SunshineReserve.sol
+
+- A smart-contract based mechanism to distribute tokens over time, inspired loosely by Compound and Uniswap.
+- Forked from Token-Geyser, renamed to Sunshine Reserve
+- Created according the RFC https://github.com/ampleforth/RFCs/blob/master/RFCs/rfc-1.md
+
+Currently under development:
+
+- Implement governance of Balancer (BAL) token
+- Implement new staking interface
+
 ### AMPLG_TeamReserve.sol
 
 - Smart contract for locking the team tokens of AmpleGold.io
