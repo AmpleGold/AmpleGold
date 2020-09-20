@@ -31,7 +31,7 @@ The official mainnet addresses of $AMPLG are:
 - ERC-20 Token: <a href="https://etherscan.io/token/0x8003c49f6ebacddc493ea47cab45e892d1b638a1">0x8003c49f6ebacddc493ea47cab45e892d1b638a1</a>
 - Gold Orchestrator Policy: <a href="https://etherscan.io/address/0x34af6c2e8bd1c58f066b401e9df249c1af128d75">0x34af6c2e8bd1c58f066b401e9df249c1af128d75</a>
 - Gold Oracle: <a href="https://etherscan.io/address/0xd015aa88d4d8f75058a3b9bf26290afe872f2642">0xd015aa88d4d8f75058a3b9bf26290afe872f2642</a>
-- AMPLG Team Reserve: <a href="https://etherscan.io/address/0x449a26acb90daedb517fded247089f30134ceb09">0x449a26AcB90daeDB517Fded247089f30134cEB09</a>
+- AMPLG Team Reserve (Locked/Vested team tokens): <a href="https://etherscan.io/address/0x449a26acb90daedb517fded247089f30134ceb09">0x449a26AcB90daeDB517Fded247089f30134cEB09</a>
 - AMPLG Sunshine Reserve (Liquidity staking smart contract): 
 <a href="https://etherscan.io/address/0x5810818F7E3583D97b930bC6EA66637b926d0676">0x5810818F7E3583D97b930bC6EA66637b926d0676</a>
 
