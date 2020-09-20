@@ -1,7 +1,7 @@
 {
   "name": "amplegold",
   "version": "1.0.0",
-  "description": "AMPLEGold $AMPLG Source Code - Goldpegged DeFi protocol",
+  "description": "AmpleGold $AMPLG Source Code - Goldpegged DeFi protocol",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/AmpleGold/AmpleGold.git"
   },
   "keywords": [
-    "AMPLEGold",
+    "AmpleGold",
     "ample",
     "gold",
     "pegged",
@@ -22,7 +22,7 @@
     "rebased",
     "rmpl"
   ],
-  "author": "AMPLEGold.io",
+  "author": "AmpleGold.io",
   "license": "GPLv3",
   "bugs": {
     "url": "https://github.com/AmpleGold/AmpleGold/issues"
