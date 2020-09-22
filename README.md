@@ -122,9 +122,9 @@ Maximum Lag factor = 14
 
 - Github: https://github.com/amplegold
 
-- Twitter: https://twitter.com/amplegold
+- Twitter: https://twitter.com/amplegold_io
 
-- Medium: https://medium.com/@amplegold
+- Medium: https://medium.com/@amplegold_io
 
 - Youtube: https://youtu.be/MnksEkAW1qA
 
